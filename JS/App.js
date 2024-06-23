@@ -24,7 +24,7 @@ btnStartPlay.addEventListener("click", (e) => {
   show3.setAttribute("class", " ");
   // function
   const arrRandom = ["قیچی", "سنگ", "کاغذ"];
-  function ranomCamputer() {
+  function randomCamputer() {
     let randomWork = arrRandom[Math.floor(Math.random() * arrRandom.length)];
     userResult2.innerHTML = randomWork;
   }
@@ -67,7 +67,7 @@ btnStartPlay.addEventListener("click", (e) => {
   buttonGame.forEach((btn) =>
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      ranomCamputer();
+      randomCamputer();
       winPlayer();
     })
   );
